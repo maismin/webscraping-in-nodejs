@@ -1,9 +1,17 @@
 const cheerio = require('cheerio');
-const request = require('request-promise');
+
+// const request = require('request-promise');
+
 // Use a proxy IP
 // const request = require('request-promise').defaults({
 //   proxy: 'ipaddress:port',
 // });
+
+const request = require('requestretry').defaults({
+  fullResponse: false, // resolves promise with just the body
+  maxAttempts: 3,
+  retryDelay: 3000, // in miliseconds
+});
 
 const url = 'https://newyork.craigslist.org/d/software-qa-dba-etc/search/sof';
 
