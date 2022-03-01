@@ -25,7 +25,7 @@
     "puppeteer": "^2.0.0",
     "request": "^2.88.0",
     "request-promise": "^4.2.5",
-    "requestretry": "^4.0.2",
+    "requestretry": "^7.0.0",
     "robots-parser": "^2.1.1"
   }
 }
